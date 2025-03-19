@@ -20,7 +20,7 @@ public class OpenApiConfig {
     public GroupedOpenApi groupedOpenApi(@Value("${openapi.service.api-docs}") String apiDocs) {
         return GroupedOpenApi.builder()
                 .group("apiDocs")
-                .packagesToScan("package controller")
+                .packagesToScan("vn.car_service.Car_Service.controller")
                 .build();
     }
 

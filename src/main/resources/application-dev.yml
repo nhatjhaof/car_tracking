@@ -4,6 +4,7 @@ spring:
       on-profile: dev
   datasource:
     url: jdbc:postgresql://localhost:5432/cartracking
+    driver-class-name: org.postgresql.Driver
     username: postgres
     password: 123456
   jpa:
@@ -24,6 +25,3 @@ openapi:
     title: API service
     version: 1.0.0
 
-logging:
-  level:
-    org.springframework: DEBUG

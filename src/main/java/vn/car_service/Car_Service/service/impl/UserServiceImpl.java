@@ -1,5 +1,6 @@
 package vn.car_service.Car_Service.service.impl;
 
+import lombok.AllArgsConstructor;
 import vn.car_service.Car_Service.common.UserStatus;
 import vn.car_service.Car_Service.controller.request.AddressRequest;
 import vn.car_service.Car_Service.controller.request.UserCreationRequest;

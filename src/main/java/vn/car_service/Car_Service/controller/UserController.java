@@ -24,6 +24,8 @@ import java.util.Map;
 @Validated
 public class UserController {
     private final UserService userService;
+
+
     @Operation(summary = "Create user" , description = "API add user")
     @PostMapping("/createUser")
     public ResponseEntity<Object> createUser(@Valid @RequestBody UserCreationRequest request) {

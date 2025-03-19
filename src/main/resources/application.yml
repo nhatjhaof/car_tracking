@@ -4,10 +4,4 @@ spring:
   application:
     name: hao-app
   profiles:
-    active: ${spring.profiles.active:dev}
-
-
-  logging:
-    level:
-      root: INFO
-      web: INFO
+    active: @spring.profiles.active@
