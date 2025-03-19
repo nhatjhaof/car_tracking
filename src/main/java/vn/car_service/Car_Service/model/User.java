@@ -20,10 +20,10 @@ import java.util.*;
 public class User extends AbstractEntity{
 
 
-    @Column(name = "firstName", length = 255)
+    @Column(name = "first_name", length = 255)
     private String firstName;
 
-    @Column(name = "lastName", length = 255)
+    @Column(name = "last_name", length = 255)
     private String lastName;
 
     @Enumerated(EnumType.STRING)
