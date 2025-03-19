@@ -1,0 +1,13 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: hao-app
+  profiles:
+    active: ${spring.profiles.active:dev}
+
+
+  logging:
+    level:
+      root: INFO
+      web: INFO

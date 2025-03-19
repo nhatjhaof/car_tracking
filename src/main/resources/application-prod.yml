@@ -1,0 +1,21 @@
+server:
+  port: 8082
+
+spring:
+  config:
+    activate:
+      on-profile: prod
+
+springdoc:
+  api-docs:
+    enabled: true
+  swagger-ui:
+    enabled: true
+
+
+openapi:
+  service:
+    api-docs: api-service
+    server: http://localhost/${server.port}
+    title: API service
+    version: 1.0.0
