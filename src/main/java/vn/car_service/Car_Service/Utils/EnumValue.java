@@ -13,7 +13,7 @@ import static java.lang.annotation.ElementType.*;
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
 @Constraint(validatedBy = EnumValueValidator.class)
-public @interface EnumValue {
+public @interface   EnumValue {
     String name();
     String message() default "{name} must be any of enum {enumClass}";
     Class<? extends Enum<?>> enumClass();

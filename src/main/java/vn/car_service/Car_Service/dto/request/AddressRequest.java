@@ -1,6 +1,5 @@
-package vn.car_service.Car_Service.controller.request;
+package vn.car_service.Car_Service.dto.request;
 
-import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 

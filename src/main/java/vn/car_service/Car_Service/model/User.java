@@ -33,7 +33,7 @@ public class User extends AbstractEntity{
 
     @Column(name = "date_of_birth" , length = 255)
     @Temporal(TemporalType.DATE)
-    private Date date_of_birth;
+    private Date birthday;
 
     @Column(name = "phone" , length = 15)
     private String phone;
@@ -60,8 +60,7 @@ public class User extends AbstractEntity{
 
 
     @OneToMany(cascade = CascadeType.ALL , fetch = FetchType.EAGER , mappedBy = "user")
-    private List<Address> addresses = new ArrayList<>();
-
+    private List<Address> addresses;
     public void saveAddress(Address address) {
         if(address != null) {
             if(addresses == null){
